@@ -51,11 +51,11 @@ export default function Celebration() {
           </ListStyled>
         </StrengthsSection>
         <p>
-          Oha, da könnte ich sicher noch weiter machen... aber vielleicht:
-          Lieber...
+          Oha, da könnte ich sicher noch weiter machen... aber vielleicht jetzt
+          lieber ...
         </p>
         <ButtonStyled as={NavLink} to="lets-celebrate/your-day">
-          ...zum nächsten gehen...
+          ... zum nächsten gehen ...
         </ButtonStyled>
       </main>
     </>
@@ -66,14 +66,7 @@ const StrengthsSection = styled.section`
   margin: 12px;
   text-align: center;
 `
-const TagsStyled = styled.li`
-  display: inline-block;
-  border: thin solid;
-  border-color: var(--primary);
-  padding: 10px;
-  margin: 5px;
-  align-items: center;
-`
+
 const ListStyled = styled.ul`
   margin-bottom: 24px;
 `
@@ -83,12 +76,34 @@ const ButtonStyled = styled.button`
   background: var(--bordeaux);
   font-size: 1em;
   font-family: Montserrat;
+  font-weight: 700;
   color: white;
   display: block;
   margin: 12px auto;
   text-align: center;
-  width: 70%;
+  width: 75%;
+  border-radius: 8px;
   box-shadow: -4px 5px 8px 0 rgba(67, 86, 100, 0.12),
     -1px 2px 4px 0 rgba(67, 86, 100, 0.1);
   cursor: default;
+`
+const TagsStyled = styled.li`
+  display: inline-block;
+  border: thin solid;
+  border-color: var(--primary);
+  padding: 10px;
+  margin: 5px;
+  align-items: center;
+  animation: 5s slidein;
+  
+  @keyframes slidein {
+    from {
+      margin-top:100%;
+      height:300%
+    }
+    
+    to {
+      margin-top:0%;
+      height:100%;
+    }
 `

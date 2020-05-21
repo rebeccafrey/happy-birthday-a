@@ -1,5 +1,6 @@
 import React from 'react'
 import anikaBday from './anika-bday.png'
+import styled from 'styled-components'
 
 export default function YourDay() {
   return (
@@ -22,9 +23,15 @@ export default function YourDay() {
           Seite davon aus, dass wir uns nicht sehen. Aber gefeiert wirst du
           trotzdem. Von mir, von anderen, vom Himmel. Oh, der Himmel. Yeah!
         </p>
-        <p>Gott segne dich mit allen Reichtümern des Himmels.</p>
-        <p>Ich liebe dich.</p>
+        <ImportantText>
+          Gott segne dich mit allen Reichtümern des Himmels.
+        </ImportantText>
+        <ImportantText>Ich liebe dich.</ImportantText>
       </main>
     </>
   )
 }
+
+const ImportantText = styled.p`
+  font-weight: 700;
+`

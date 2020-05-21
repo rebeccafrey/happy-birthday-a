@@ -17,7 +17,7 @@ export default createGlobalStyle`
   
   body {
     font-family: Montserrat;
-    font-weight: 200;
+    font-weight: 300;
     line-height: 1.5;
     color: var(--black);
   }
@@ -42,7 +42,6 @@ export default createGlobalStyle`
     height:100%;
     overflow: scroll;
     padding: 100px 12px 36px;
-
   }
   
   footer {
